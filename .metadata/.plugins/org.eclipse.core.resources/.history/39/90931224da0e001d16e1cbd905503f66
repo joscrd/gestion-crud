@@ -1,0 +1,5 @@
+package spring.curso.controller;
+
+public class DiscosController {
+
+}

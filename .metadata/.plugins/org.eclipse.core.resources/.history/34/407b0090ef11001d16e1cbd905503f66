@@ -1,0 +1,79 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<%@include file="./base.jsp"%>
+</head>
+<body>
+
+
+	<div class="container mt-3">
+
+		<h1>Edit Employee Form</h1>
+		<form action="actualizarDisco" method="post">
+
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="id">Id</label> <input type="text"
+							value="${disco.id}" class="form-control" id="id" name="id"
+							readonly="readonly">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="artista">Artista</label> <input type="text"
+							value="${disco.artista}" class="form-control" id="artista"
+							name="artista" placeholder="Introducir artista">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="album">Album</label> <input type="text"
+							value="${disco.album}" class="form-control"
+							id="album" name="album"
+							placeholder="Introducir album">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="genero">Genero</label> <input
+							type="text" class="form-control" id="genero"
+							value="${disco.genero}" name="genero"
+							placeholder="Introducir genero">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="stock">Stock</label> <input type="number"
+							value="${disco.stock}" class="form-control" id="stock"
+							name="stock" placeholder="Copias en inventario">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="precio">Precio</label>
+						<input class="form-control" id="precio" name="precio"
+							rows="5" placeholder="Introducir precio"> ${disco.precio} />
+					</div>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+	</div>
+
+</body>
+</html>

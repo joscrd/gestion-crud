@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<%@include file="./base.jsp"%>
+</head>
+<body>
+
+
+	<div class="container mt-3">
+
+		<h1>Catalogo de Discos</h1>
+		<a href="agregarDisco" class="btn btn-primary"> Agregar Disco </a>
+		<div class="row">
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Artista</th>
+						<th scope="col">Album</th>
+						<th scope="col">Genero</th>
+						<th scope="col">Stock</th>
+						<th scope="col">Precio</th>
+						<th scope="col">Editar</th>
+						<th scope="col">Eliminar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach var="disco" items="${discos}">
+						<tr>
+							<td class="table-plus">${disco.id}</td>
+							<td>${disco.artista}</td>
+							<td>${disco.album}</td>
+							<td>${disco.genero}</td>
+							<td>${disco.stock}</td>
+							<td>${disco.precio}</td>
+							<td><a href="editarDisco/${disco.id}" class="btn btn-warning">
+									Editar </a></td>
+							<td><a href="eliminarDisco/${disco.id}"
+								class="btn btn-danger"> Eliminar </a></td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

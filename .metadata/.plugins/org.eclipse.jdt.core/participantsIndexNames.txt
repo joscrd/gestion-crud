@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\UABC\Documents\gestion-crud\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4084263825.index
+\GestionCRUD\src\main\java
+C:\Users\UABC\Documents\gestion-crud\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1594260977.index
+\gestion\src\main\java
+C:\Users\UABC\Documents\gestion-crud\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3827250829.index
+\inventario\src\main\java

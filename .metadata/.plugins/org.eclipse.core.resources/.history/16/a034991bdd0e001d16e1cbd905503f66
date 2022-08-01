@@ -1,0 +1,33 @@
+package spring.curso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+import spring.curso.model.Discos;
+import spring.curso.service.DiscosService;
+
+@Controller
+@RequestMapping
+public class DiscosController {
+	
+	@Autowired
+	DiscosService discosService;
+	
+	
+//Metodo paara agregar Discos al inventario
+	@GetMapping("agregarDisco")
+	public String agregarDisco() {
+		
+		return "agregarDisco";
+	}
+	
+	public String insertDisco(@ModelAttribute("insertDisco") Discos disco) {
+		
+		discosService.agregarDisco(disco);
+		
+		return "agregarDisco";
+	}
+	
+	
+}

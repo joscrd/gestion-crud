@@ -1,0 +1,13 @@
+package spring.curso;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MainController {
+	
+	public String View() {
+		return "home";
+	}
+
+}
+s

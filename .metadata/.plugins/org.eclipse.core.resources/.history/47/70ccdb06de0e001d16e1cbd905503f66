@@ -1,0 +1,20 @@
+package spring.curso.model;
+
+import javax.persistence.*;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Discos {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String artista;
+	private String album;
+	private String genero;
+	private Integer stock;
+	private Integer precio;
+
+}
