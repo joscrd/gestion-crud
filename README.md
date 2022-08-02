@@ -1,5 +1,6 @@
 # gestion-crud
-crud para gestionar inventario discos.
+Aplicación monolítica crud para gestionar inventario de discos.
+Java Spring MVC.
 
 Base de datos mysql:
 CREATE TABLE gestion_inventario.Discos (
