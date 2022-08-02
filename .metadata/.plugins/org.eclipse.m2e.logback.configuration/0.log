@@ -1883,3 +1883,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact mysql:mysql-c
 2022-08-01 16:13:33,100 [Worker-2042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-01 16:13:33,101 [Worker-2042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\UABC\Documents\gestion-crud\inventario\src\main\resources
 2022-08-01 16:13:33,102 [Worker-2042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-01 16:13:33,102 [Worker-2042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\UABC\Documents\gestion-crud\inventario\src\test\resources
